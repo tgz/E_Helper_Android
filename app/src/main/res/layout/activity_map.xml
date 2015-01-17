@@ -1,0 +1,35 @@
+<LinearLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <com.baidu.mapapi.map.MapView
+        android:id="@+id/map"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="3"
+        android:clickable="true" />
+
+    <TextView
+        android:id="@+id/LoactionTextView"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#008B8B"
+        android:text="定位中……" />
+
+    <ListView
+        android:id="@+id/lv"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="2"
+        android:cacheColorHint="#00000000" />
+
+    <Button
+        style="@style/btnStyleBule"
+        android:id="@+id/reGPS"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="重新定位" />
+
+</LinearLayout>

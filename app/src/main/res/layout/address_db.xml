@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:id="@+id/address_db_list" >
+
+    <!--<TextView
+        android:id="@+id/AddressInDb"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:text="收藏的地点："
+        android:textAppearance="?android:attr/textAppearanceLarge" />-->
+
+<ListView
+        android:id="@+id/addressDB"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="2"
+        android:cacheColorHint="#00000000" />
+    <Button
+        style="@style/btnStyleBule"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="打开地图"
+        android:id="@+id/btn_openMap"/>
+</LinearLayout>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="AppTheme" parent="android:Theme.Material.Light.DarkActionBar">
+        <item name="android:actionBarStyle">@style/mActionBarStyle</item>
+        <item name="android:colorPrimaryDark">#ff00a5ab</item>
+    </style>
+    <style name="mActionBarStyle">
+        <item name="android:background">#ff00b7bd</item>
+        <item name="android:titleTextStyle">@style/mActionBarTitleStyle</item>
+    </style>
+    <style name="mActionBarTitleStyle">
+        <item name="android:textColor">#FFFFFF</item>
+    </style>
+
+</resources>

@@ -1,0 +1,147 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" tools:context=".MainActivity"
+    >
+    <Space
+        android:layout_width="fill_parent"
+        android:layout_height="15dp"
+
+        android:layout_alignParentLeft="true"
+        android:id="@+id/spaceUserInfo"
+        />
+
+    <LinearLayout
+        android:focusable="true" android:focusableInTouchMode="true"
+        android:layout_width="0px" android:layout_height="0px"/>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="未登录"
+        android:textSize="25sp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/spaceUserInfo"
+        android:id="@+id/textViewUserInfo" />
+
+    <Space
+        android:layout_width="fill_parent"
+        android:layout_height="20dp"
+        android:layout_below="@+id/textViewUserInfo"
+        android:layout_alignParentLeft="true"
+
+        android:id="@+id/spaceLocation" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageLocation"
+        android:layout_below="@+id/spaceLocation"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:src="@drawable/location" />
+    <EditText
+
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/imageLocation"
+        android:layout_below="@id/spaceLocation"
+        android:hint="左侧按钮选择地点或者输入"
+        android:textSize="15sp"
+        android:id="@+id/editTextLocation"
+        />
+
+    <Space
+        android:layout_width="fill_parent"
+        android:layout_height="25dp"
+        android:layout_below="@+id/editTextLocation"
+        android:layout_alignParentLeft="true"
+        android:id="@+id/spaceZreport" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="今日零报告："
+        android:layout_below="@+id/spaceZreport"
+        android:layout_alignParentLeft="true"
+        android:textSize="18sp"
+        android:paddingLeft="20dp"
+        android:id="@+id/zReportToday"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/zReportStatus"
+        android:textSize="18sp"
+        android:layout_toRightOf="@id/zReportToday"
+        android:layout_alignTop="@+id/zReportToday" />
+
+    <Space
+        android:layout_width="fill_parent"
+        android:layout_height="10dp"
+        android:layout_below="@id/zReportToday"
+        android:id="@+id/spaceLog"/>
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@id/spaceLog"
+        android:scrollbars="vertical"
+        android:id="@+id/textViewLog"
+        android:layout_marginBottom="60dp"
+        android:text="@string/fragmeng_Home_log"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp" />
+    <Button
+        style="@style/btnStyleBule"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentBottom="true"
+        android:id="@+id/btnZeroReport"
+        android:text="零报告"
+        android:layout_alignParentRight="false" />
+    <Button
+        style="@style/btnStyleBule"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnAttendanceLog"
+        android:text="考勤记录"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
+    <!--android:layout_below="@+id/textViewLog"-->
+    <Button
+        style="@style/btnStyleBule"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="考勤"
+        android:id="@+id/btnKaoQin"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true" />
+
+
+
+
+    <!--<Button-->
+    <!--style="@style/btnStyleBule"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:text="New Button"-->
+    <!--android:id="@+id/button"-->
+    <!--android:layout_below="@id/textViewUserInfo"-->
+    <!--android:layout_toRightOf="@+id/button2" />-->
+
+    <!--<Button-->
+    <!--style="@style/btnStyleBule"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:text="New Button"-->
+    <!--android:id="@+id/button2"-->
+    <!--android:layout_below="@id/textViewUserInfo"-->
+    <!--android:layout_alignParentLeft="true" />-->
+
+
+
+
+</RelativeLayout>

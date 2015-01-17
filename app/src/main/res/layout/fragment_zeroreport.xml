@@ -1,0 +1,62 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:text="日期："
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="10dp" />
+
+    <EditText
+        android:id="@+id/dateSelect"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/textView2"
+        android:inputType="date"
+        android:ems="10"
+        android:layout_marginTop="15dp">
+
+        <requestFocus />
+    </EditText>
+
+    <Button
+        style="@style/btnStyleBule"
+        android:id="@+id/getZReportHistory"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="获取报告记录"
+        android:layout_below="@+id/dateSelect"
+        android:layout_alignLeft="@+id/dateSelect"
+        android:layout_alignStart="@+id/dateSelect" />
+    <Button
+        style="@style/btnStyleBule"
+        android:id="@+id/btn_AddMissZReport"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:text="补"
+        android:layout_below="@+id/dateSelect"
+        android:layout_alignRight="@+id/dateSelect"
+        android:layout_alignEnd="@+id/dateSelect" />
+    <TextView
+        android:id="@+id/tv_ZReportResult"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/getZReportHistory"
+        android:scrollbars="vertical"
+        android:text="@string/ZReport_explain"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="10dp" />
+
+
+
+
+
+</RelativeLayout>

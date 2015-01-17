@@ -1,0 +1,34 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="android:Theme.Holo.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="android:actionBarStyle">@style/mActionBarStyle</item>
+        <item name="android:actionBarSize">@dimen/action_bar_height</item>
+        <item name="android:windowContentOverlay">@drawable/actionbar_shadow</item>
+        <item name="android:homeAsUpIndicator">@drawable/ic_ab_up_compat</item>
+        <item name="android:actionOverflowButtonStyle">@style/AppTheme_ActionBar_Overflow</item>
+    </style>
+    <style name="mActionBarStyle" parent="android:Widget.Holo.ActionBar.Solid">
+        <item name="android:background">#ff00b7bd</item>
+        <item name="android:titleTextStyle">@style/mActionBarTitleStyle</item>
+    </style>
+    <style name="mActionBarTitleStyle">
+        <item name="android:textColor">#FFFFFF</item>
+    </style>
+    <style name="AppTheme_ActionBar_Overflow" parent="android:Widget.ActionButton.Overflow">
+        <item name="android:src">@drawable/ic_ab_overflow_compat</item>
+    </style>
+    <style name="btnStyleBule" parent="android:Widget.Button">
+        <item name="android:background">#ff00bbff</item>
+        <item name="android:textColor" >#ffffffff</item>
+        <item name="android:paddingLeft">10dp</item>
+        <item name="android:paddingRight">10dp</item>
+        <item name="android:paddingBottom">8dp</item>
+        <item name="android:paddingTop">8dp</item>
+        <item name="android:layout_marginLeft">5dp</item>
+        <item name="android:layout_marginRight">5dp</item>
+        <item name="android:layout_marginTop">5dp</item>
+        <item name="android:layout_marginBottom">5dp</item>
+    </style>
+</resources>
