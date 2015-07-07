@@ -1,5 +1,5 @@
 # E_Helper_Android
-E_Helper_Android
+公司工具,此处代码不包含涉及敏感的数据加密方法。
  使用AndroidStudio重构，AndroidMaterial风格
 ---
 ##屏幕截图
